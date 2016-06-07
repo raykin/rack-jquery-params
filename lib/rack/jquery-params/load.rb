@@ -14,9 +14,9 @@ module Rack
     end
 
     def call(env)
+      self.class.fix(env, @options[:applies_to])
       status, headers, response = @app.call(env)
 
-      self.class.fix(env, @options[:applies_to])
       [status, headers, response]
     end
 
