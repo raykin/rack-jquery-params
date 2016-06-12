@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 # why need it here? it block bundler install
-# require 'rack/jquery-params'
+require 'rack/jquery-params'
 
 Gem::Specification.new do |gem|
   gem.name        = 'rack-jquery-params'
