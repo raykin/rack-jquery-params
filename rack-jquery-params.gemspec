@@ -1,12 +1,6 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-# why need it here? it block bundler install
-require 'rack/jquery-params'
-
 Gem::Specification.new do |gem|
   gem.name        = 'rack-jquery-params'
-  gem.version     = Rack::JQueryParams::VERSION
+  gem.version     = '0.2.2'
   gem.date        = '2015-01-18'
   gem.summary     = %q{Rack middleware that fixes the discrepancy between jQuery.param and how Rack parses nested queries.}
   gem.authors     = ['Caleb Clark']
